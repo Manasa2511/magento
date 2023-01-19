@@ -1,0 +1,446 @@
+#bundle() {
+    .font-style{
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #000;
+        font-family: system-ui ,'Open Sans';
+    }
+    .blog-post-full-part{
+        width: 97%;
+       margin: 0 0 25px;
+    }
+    .blog-post-img{
+        display: block;
+            width: 100%;
+            height: auto;
+            padding-top:40px;
+            padding-bottom:40px;
+    }
+    .blog-post-head{
+        position: relative;
+            margin-bottom: 20px;
+    }
+    .blogs-post-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(76,76,76,0.43);
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0;
+    }
+    .blogs-post-hover-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        #bundle.font-style();
+        color: #fff;
+    }
+    .blog-post-hover-hover{
+        opacity: 1;
+        border-radius: 12px;
+    }
+    .blog-post-footer-head{
+        font-size: 24px;
+        color: #000;
+        font-weight: 300;
+        margin: 0 0 20px;
+        font-family: system-ui, 'Open Sans';
+        line-height: 1.1;
+        cursor: pointer;
+        &:hover{
+            color: #777;
+        }
+    }
+    .blog-post-footer-by{
+        color: #A8AAB2 !important;
+                font-size: 12px !important;
+                #bundle.font-style();
+    }
+}
+// Return Policy
+.return-policy-main{
+    p{
+        #bundle.font-style();
+        margin: 0 0 10px;
+    }
+    li{
+        #bundle.font-style();
+    }
+    .underline-text{
+        p{
+            text-decoration: underline;
+        }
+    }
+}
+// About us
+.pagebuilder-mobile-hidden{
+    width: 100%;
+}
+.about-us-main{
+    p{
+        #bundle.font-style();
+        margin: 0 0 10px;
+    }
+    strong{
+        color: #236fa1;
+    }
+    .ourteam-head{
+        font-size: 18pt;
+        color: #236fa1;
+    }
+}
+// Privacy Policy
+.privacy-policy {
+    strong {
+        #bundle.font-style();
+    }
+
+    p {
+        #bundle.font-style();
+    }
+}
+// Offers-discount
+.error-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    .error{
+        .error404{
+            font-weight: 400 !important;
+            line-height: 1.1;
+            color: inherit;
+            font-family: system-ui ,'Open Sans';
+            margin: 0.67em 0;
+            font-size: 36px;
+        }
+        .doent-exit{
+            font-weight: 400 !important;
+            line-height: 1.1;
+            color: inherit;
+            font-family: system-ui ,'Open Sans';
+            margin: 0.67em 0;
+            font-size: 24px;
+        }
+        
+    }
+    .go-to-home{
+        a{
+        color: #000;
+        cursor: pointer!important;
+        text-decoration: none;
+        font-family: system-ui ,'Open Sans';
+        }
+    }
+}
+// Blogs Page
+.blogs-post{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .running{
+       #bundle.blog-post-full-part();
+        & img{
+            #bundle.blog-post-img();
+        }
+        .running-head{
+            #bundle.blog-post-head();
+            .running-hover{
+                #bundle.blogs-post-hover();
+                .text {
+                   #bundle.blogs-post-hover-text();
+                  }
+            }
+         
+        }
+        &:hover .running-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        .running-footer{
+            .running-benefits{
+               #bundle.blog-post-footer-head();
+            }
+            .by{
+                #bundle.blog-post-footer-by();
+            }
+        }
+    }
+    .prevent-ilnjuries{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .prevent-ilnjuries-head{
+             #bundle.blog-post-head();
+             .prevent-ilnjuries-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+             
+         }
+         &:hover .prevent-ilnjuries-hover{
+            #bundle.blog-post-hover-hover();
+         }
+         .prevent-ilnjuries-footer{
+             .prevent-ilnjuries-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .beginners-guide{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .beginners-guide-head{
+             #bundle.blog-post-head();
+             .beginners-guide-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+            
+         }
+         &:hover .beginners-guide-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        
+         .beginners-guide-footer{
+             .beginners-guide-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .marathon{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .marathon-head{
+             #bundle.blog-post-head();
+             .marathon-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+             
+         }
+         &:hover .marathon-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        
+         .marathon-footer{
+             .marathon-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+             .information{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: #66676D; 
+                    font-family: system-ui ,'Open Sans';
+             }
+         }
+     }
+     .marathons-india{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .marathons-india-head{
+             #bundle.blog-post-head();
+             .marathons-india-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+             
+         }
+         &:hover .marathons-india-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        
+         .marathons-india-footer{
+             .marathons-india-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-watches{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-watches-head{
+             #bundle.blog-post-head();
+             .running-watches-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-watches-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-watches-footer{
+             .running-watches-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-tips{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-tips-head{
+             #bundle.blog-post-head();
+             .running-tips-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-tips-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-tips-footer{
+             .running-tips-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-clubs{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-clubs-head{
+             #bundle.blog-post-head();
+             .running-clubs-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-clubs-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-clubs-footer{
+             .running-clubs-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-shoes{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-shoes-head{
+             #bundle.blog-post-head();
+             .running-shoes-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-shoes-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-shoes-footer{
+             .running-shoes-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+             .information, .less-than-arrow{
+                font-size: 14px;
+                line-height: 1.5;
+                color: #66676D; 
+                font-family: system-ui ,'Open Sans';
+         }
+         }
+     }
+     .runners-knee{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .runners-knee-head{
+             #bundle.blog-post-head();
+             .runners-knee-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .runners-knee-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .runners-knee-footer{
+             .runners-knee-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .Date{
+        font-size: 12px;
+        line-height: 1.428571429;
+        cursor: pointer;
+        padding: 4px;
+        color: #000;
+        
+     }
+}
